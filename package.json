@@ -1,0 +1,26 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "description": "study for 'javascript pattern and test'",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/es678/pattern.git"
+  },
+  "keywords": [
+    "pattern",
+    "tdd",
+    "javascript"
+  ],
+  "author": "ES678",
+  "license": "ISC",
+  "homepage": "https://github.com/es678/pattern",
+  "scripts": {},
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine-html-reporter": "^0.2.2"
+  },
+  "dependencies": {}
+}
