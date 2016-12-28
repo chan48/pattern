@@ -5,9 +5,13 @@
 ### 1) 초기 세팅
 
 ```bash
-$ [WINDOWS] npm i karma karma-cli jasmine     // (karma, jasmine 처음 설치시)
-$ [MAC_OS]  sudo npm i karma karma-cli jasmine // (karma, jasmine 처음 설치시)
+// (karma, jasmine 처음 설치시)
+$ npm i -g karma karma-cli jasmine       // WINDOWS
+$ sudo npm i -g karma karma-cli jasmine  // MAC_OS
 
+// (공통사항)
+$ git clone https://github.com/ES678/pattern.git
+$ cd pattern
 $ npm i
 ```
 
