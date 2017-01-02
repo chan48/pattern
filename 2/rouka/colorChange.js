@@ -28,9 +28,11 @@ const StyleChanger = (_=> {
         }
 
         change() {
-            throw new TypeError('subclassing required!');
+            this.loader.load().then(color => {
+                this.applier.apply(target, color);
+            })
         }
-    }
+    };
 })();
 
 class URLStyleLoader extends StyleLoader {
@@ -50,11 +52,6 @@ class DOMColorStyleApplier extends StyleApplier {
 class DOMStyleChanger extends StyleChanger {
     constructor() {
         super(new DOMColorStyleApplier(), new URLStyleLoader());
-    }
-    change(target) {
-        this.loader.load().then(color => {
-            this.applier.apply(target, color);
-        })
     }
 }
 
